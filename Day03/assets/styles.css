@@ -199,6 +199,7 @@ padding: 10px;
     background-color: rgb(24, 45, 70);
     padding: 10px;
     margin-top: 10px;
+    flex-direction: row-reverse;
 }
 .footer div{
     display: flex;
