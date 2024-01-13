@@ -1,4 +1,5 @@
 // There are 3 ways of writing javaScript Functions
+
 // Method1 : Function Declartion 
  function sum(x,y){
     let add = x+y;
