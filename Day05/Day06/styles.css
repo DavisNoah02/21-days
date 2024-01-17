@@ -1,0 +1,21 @@
+*{
+    padding: 10px;
+    margin: 0;
+    background-color: white;
+    color: rgb(29, 21, 101);
+    font-family: 'Times New Roman', Times, serif;
+}
+.head{
+    background-color: black;
+    border: 2px solid blue;
+    padding: 100px;
+    display: block;
+}
+#check-btn{
+   border: 2px solid rgb(192, 16, 40);
+   color: rgb(17, 203, 45);
+   
+}
+#check-btn:hover{
+    background-color: rgb(53, 53, 129);
+}

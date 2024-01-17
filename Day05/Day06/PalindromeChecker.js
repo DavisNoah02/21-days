@@ -1,38 +1,36 @@
-// Checking if a word is a palindrome
+$(document).ready(function(){
+    $('button').click(function(event){
+        event.preventDefault();
 
-// method 1: using for loop
-function palindromeChecker(word) {
-    //declare var rev with empty string for storing reversed word
-    let rev = "";
-    // initialize var i with last index of the word
-    let i = word.length - 1;
-    for ( i >= 0; i < word.length/2;  i--) {
-        rev += word[i];
-    }
-    if (rev == word) {
-        return true
-    } else {
+        let word = $('#palindromeInput').val().toLowerCase();
+        let isPalindome = checkPalindrome(word)
+
+
+        if (palindromeInput.value === "") {
+              alert("Please input a value!");
+            }
+         else  if(isPalindome){
+            alert(palindromeInput.value + " is a palindrome.")
+        }
+        else{
+            alert(palindromeInput.value + " is  NOT a palindrome.")
+        }
+    })
+})
+ //function to check the palindrome word
+   function checkPalindrome(word){
+   let len = word.length;
+   for(let i=0; i<len; i++){
+      if (word[i]!==word[len-1-i]){
         return false;
-    }
-}
-// initialize var word with 'nana' value
-let word = "nana";
-//  call function
-console.log(palindromeChecker(word));
+      }
+   }
+     return true;
+   }
 
-
-
-// Method 2: Using spilt(), reverse() and join() methods
-function palindromeChecker2(word2){
-
-  let rev = word2.split('').reverse().join('');
-
-if(rev == word2){
-    return true;
-}else{
-    return false ; 
-}
-}
-let word2 = "mum";
-// call function
-console.log(palindromeChecker2(word2));
+   function checkPalindrome(str){
+    let originalString = /[\W_]/g;
+    let newString = str.toLowerCase().replace(originalString,'')
+    let reverseStr = newString.split('').reverse().join('');
+    return reverseStr === newString;
+   }
