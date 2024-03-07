@@ -10,7 +10,7 @@ fruits[1]= "Grapes";
 console.log(fruits);
 //push - adding elements to the end
 fruits.push("Guava", "Watermelon")
-console.log(fruits);
+console.log(fruits)
 //pop - removing elements from the end
 const removedfruit = fruits.pop();
 console.log(removedfruit);

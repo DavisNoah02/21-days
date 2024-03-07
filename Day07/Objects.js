@@ -3,7 +3,7 @@ const person = {
     firstName: "Noah",
     lastName: "Dave",
     age: 23,
-    greet: () => {
+    greet: function() {
       console.log(`Hello, I'm ${this.firstName} ${this.lastName}.`);
     }
   };

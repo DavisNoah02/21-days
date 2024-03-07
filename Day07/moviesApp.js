@@ -29,7 +29,9 @@ const movieApp = {
     displayMovies: function() {
       console.log("Movie List:");
       this.movieList.forEach(movie => {
-        console.log(`Title: ${movie.title}, Genre: ${movie.genre}, Director: ${movie.director}`);
+        console.log(`Title: ${movie.title},
+                     Genre: ${movie.genre},
+                     Director: ${movie.director}`);
       });
     }
   };
