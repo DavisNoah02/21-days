@@ -1,6 +1,6 @@
 // There are 3 ways of writing javaScript Functions
 
-// Method1 : Function Declartion 
+// Method1 : Function Declaration
  function sum(x,y){
     let add = x+y;
     return add;
